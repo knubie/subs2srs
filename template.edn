@@ -1,0 +1,1833 @@
+{:fields
+  {:japanese {:name "Japanese" :type "text"}
+   :english {:name "English" :type "text"}
+   :audio {:name "Audio" :type "audio"}
+   :screenshot {:name "Screenshot" :type "image"}}
+  :cards [
+          {:sort 0
+           :fields {:japanese "ペンギンさんの失恋"
+                    :english ""
+                    :audio "shirokuma_11-0.mp3"
+                    :screenshot "shirokuma_11-0.jpg"}}
+          {:sort 1
+           :fields {:japanese "はい"
+                    :english ""
+                    :audio "shirokuma_11-1.mp3"
+                    :screenshot "shirokuma_11-1.jpg"}}
+          {:sort 2
+           :fields {:japanese "頼んでないよ"
+                    :english ""
+                    :audio "shirokuma_11-2.mp3"
+                    :screenshot "shirokuma_11-2.jpg"}}
+          {:sort 3
+           :fields {:japanese "新メニューのホットケーキ 味見してみて"
+                    :english ""
+                    :audio "shirokuma_11-3.mp3"
+                    :screenshot "shirokuma_11-3.jpg"}}
+          {:sort 4
+           :fields {:japanese "笹が入ってないよ"
+                    :english ""
+                    :audio "shirokuma_11-4.mp3"
+                    :screenshot "shirokuma_11-4.jpg"}}
+          {:sort 5
+           :fields {:japanese "普通入れないから"
+                    :english ""
+                    :audio "shirokuma_11-5.mp3"
+                    :screenshot "shirokuma_11-5.jpg"}}
+          {:sort 6
+           :fields {:japanese "なんか しょっぱい"
+                    :english ""
+                    :audio "shirokuma_11-6.mp3"
+                    :screenshot "shirokuma_11-6.jpg"}}
+          {:sort 7
+           :fields {:japanese "シャケ入れてみた"
+                    :english ""
+                    :audio "shirokuma_11-7.mp3"
+                    :screenshot "shirokuma_11-7.jpg"}}
+          {:sort 8
+           :fields {:japanese "笹子さんも食べてみてよ"
+                    :english ""
+                    :audio "shirokuma_11-8.mp3"
+                    :screenshot "shirokuma_11-8.jpg"}}
+          {:sort 9
+           :fields {:japanese "あ… はい"
+                    :english ""
+                    :audio "shirokuma_11-9.mp3"
+                    :screenshot "shirokuma_11-9.jpg"}}
+          {:sort 10
+           :fields {:japanese "やっぱり しょっぱいです"
+                    :english ""
+                    :audio "shirokuma_11-10.mp3"
+                    :screenshot "shirokuma_11-10.jpg"}}
+          {:sort 11
+           :fields {:japanese "はぁ…"
+                    :english ""
+                    :audio "shirokuma_11-11.mp3"
+                    :screenshot "shirokuma_11-11.jpg"}}
+          {:sort 12
+           :fields {:japanese "あれ？ ペンギンさんいつからいたの？"
+                    :english ""
+                    :audio "shirokuma_11-12.mp3"
+                    :screenshot "shirokuma_11-12.jpg"}}
+          {:sort 13
+           :fields {:japanese "ずっといるでしょ！"
+                    :english ""
+                    :audio "shirokuma_11-13.mp3"
+                    :screenshot "shirokuma_11-13.jpg"}}
+          {:sort 14
+           :fields {:japanese "ちゃんと気づいてたよ"
+                    :english ""
+                    :audio "shirokuma_11-14.mp3"
+                    :screenshot "shirokuma_11-14.jpg"}}
+          {:sort 15
+           :fields {:japanese "でも何か話しかけちゃいけないのかと思って"
+                    :english ""
+                    :audio "shirokuma_11-15.mp3"
+                    :screenshot "shirokuma_11-15.jpg"}}
+          {:sort 16
+           :fields {:japanese "話しかけてよ！"
+                    :english ""
+                    :audio "shirokuma_11-16.mp3"
+                    :screenshot "shirokuma_11-16.jpg"}}
+          {:sort 17
+           :fields {:japanese "シャケ入りホットケーキ 食べる？"
+                    :english ""
+                    :audio "shirokuma_11-17.mp3"
+                    :screenshot "shirokuma_11-17.jpg"}}
+          {:sort 18
+           :fields {:japanese "僕は今食欲なんかないの"
+                    :english ""
+                    :audio "shirokuma_11-18.mp3"
+                    :screenshot "shirokuma_11-18.jpg"}}
+          {:sort 19
+           :fields {:japanese "どうしたんですか？"
+                    :english ""
+                    :audio "shirokuma_11-19.mp3"
+                    :screenshot "shirokuma_11-19.jpg"}}
+          {:sort 20
+           :fields {:japanese "見てわからない？"
+                    :english ""
+                    :audio "shirokuma_11-20.mp3"
+                    :screenshot "shirokuma_11-20.jpg"}}
+          {:sort 21
+           :fields {:japanese "わかんないよ"
+                    :english ""
+                    :audio "shirokuma_11-21.mp3"
+                    :screenshot "shirokuma_11-21.jpg"}}
+          {:sort 22
+           :fields {:japanese "僕はね… 僕はね…"
+                    :english ""
+                    :audio "shirokuma_11-22.mp3"
+                    :screenshot "shirokuma_11-22.jpg"}}
+          {:sort 23
+           :fields {:japanese "失恋したんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-23.mp3"
+                    :screenshot "shirokuma_11-23.jpg"}}
+          {:sort 24
+           :fields {:japanese "失恋？"
+                    :english ""
+                    :audio "shirokuma_11-24.mp3"
+                    :screenshot "shirokuma_11-24.jpg"}}
+          {:sort 25
+           :fields {:japanese "それは 七輪！"
+                    :english ""
+                    :audio "shirokuma_11-25.mp3"
+                    :screenshot "shirokuma_11-25.jpg"}}
+          {:sort 26
+           :fields {:japanese "それは 一輪車！"
+                    :english ""
+                    :audio "shirokuma_11-26.mp3"
+                    :screenshot "shirokuma_11-26.jpg"}}
+          {:sort 27
+           :fields {:japanese "それは 三輪車！"
+                    :english ""
+                    :audio "shirokuma_11-27.mp3"
+                    :screenshot "shirokuma_11-27.jpg"}}
+          {:sort 28
+           :fields {:japanese "だから 僕は 失恋して ツッコむ気力もないの！"
+                    :english ""
+                    :audio "shirokuma_11-28.mp3"
+                    :screenshot "shirokuma_11-28.jpg"}}
+          {:sort 29
+           :fields {:japanese "ツッコんでるじゃない"
+                    :english ""
+                    :audio "shirokuma_11-29.mp3"
+                    :screenshot "shirokuma_11-29.jpg"}}
+          {:sort 30
+           :fields {:japanese "失恋って ペン子さん？"
+                    :english ""
+                    :audio "shirokuma_11-30.mp3"
+                    :screenshot "shirokuma_11-30.jpg"}}
+          {:sort 31
+           :fields {:japanese "決まってるじゃない！"
+                    :english ""
+                    :audio "shirokuma_11-31.mp3"
+                    :screenshot "shirokuma_11-31.jpg"}}
+          {:sort 32
+           :fields {:japanese "あ… あの… なんて言ったらいいか…"
+                    :english ""
+                    :audio "shirokuma_11-32.mp3"
+                    :screenshot "shirokuma_11-32.jpg"}}
+          {:sort 33
+           :fields {:japanese "何も言わないで ほっておいてよ"
+                    :english ""
+                    :audio "shirokuma_11-33.mp3"
+                    :screenshot "shirokuma_11-33.jpg"}}
+          {:sort 34
+           :fields {:japanese "パンダくん駅前のベーグル屋さんおいしいらしいよ"
+                    :english ""
+                    :audio "shirokuma_11-34.mp3"
+                    :screenshot "shirokuma_11-34.jpg"}}
+          {:sort 35
+           :fields {:japanese "聞いてよ！"
+                    :english ""
+                    :audio "shirokuma_11-35.mp3"
+                    :screenshot "shirokuma_11-35.jpg"}}
+          {:sort 36
+           :fields {:japanese "聞いてほしいんですか？"
+                    :english ""
+                    :audio "shirokuma_11-36.mp3"
+                    :screenshot "shirokuma_11-36.jpg"}}
+          {:sort 37
+           :fields {:japanese "当たり前じゃない！"
+                    :english ""
+                    :audio "shirokuma_11-37.mp3"
+                    :screenshot "shirokuma_11-37.jpg"}}
+          {:sort 38
+           :fields {:japanese "話せば楽になるぞ"
+                    :english ""
+                    :audio "shirokuma_11-38.mp3"
+                    :screenshot "shirokuma_11-38.jpg"}}
+          {:sort 39
+           :fields {:japanese "刑事さん 実は…"
+                    :english ""
+                    :audio "shirokuma_11-39.mp3"
+                    :screenshot "shirokuma_11-39.jpg"}}
+          {:sort 40
+           :fields {:japanese "って… 僕は 犯人じゃないから！"
+                    :english ""
+                    :audio "shirokuma_11-40.mp3"
+                    :screenshot "shirokuma_11-40.jpg"}}
+          {:sort 41
+           :fields {:japanese "で… どうしたの？"
+                    :english ""
+                    :audio "shirokuma_11-41.mp3"
+                    :screenshot "shirokuma_11-41.jpg"}}
+          {:sort 42
+           :fields {:japanese "見ちゃったんだよ"
+                    :english ""
+                    :audio "shirokuma_11-42.mp3"
+                    :screenshot "shirokuma_11-42.jpg"}}
+          {:sort 43
+           :fields {:japanese "何を？"
+                    :english ""
+                    :audio "shirokuma_11-43.mp3"
+                    :screenshot "shirokuma_11-43.jpg"}}
+          {:sort 44
+           :fields {:japanese "ペン子さんがデートしてるところ…"
+                    :english ""
+                    :audio "shirokuma_11-44.mp3"
+                    :screenshot "shirokuma_11-44.jpg"}}
+          {:sort 45
+           :fields {:japanese "だ… 誰とですか？"
+                    :english ""
+                    :audio "shirokuma_11-45.mp3"
+                    :screenshot "shirokuma_11-45.jpg"}}
+          {:sort 46
+           :fields {:japanese "それがなんと驚いたことに…"
+                    :english ""
+                    :audio "shirokuma_11-46.mp3"
+                    :screenshot "shirokuma_11-46.jpg"}}
+          {:sort 47
+           :fields {:japanese "絶対に ありえない相手で…"
+                    :english ""
+                    :audio "shirokuma_11-47.mp3"
+                    :screenshot "shirokuma_11-47.jpg"}}
+          {:sort 48
+           :fields {:japanese "本当に信じられない…"
+                    :english ""
+                    :audio "shirokuma_11-48.mp3"
+                    :screenshot "shirokuma_11-48.jpg"}}
+          {:sort 49
+           :fields {:japanese "誰なんですか？"
+                    :english ""
+                    :audio "shirokuma_11-49.mp3"
+                    :screenshot "shirokuma_11-49.jpg"}}
+          {:sort 50
+           :fields {:japanese "まさかと思うくらいの…"
+                    :english ""
+                    :audio "shirokuma_11-50.mp3"
+                    :screenshot "shirokuma_11-50.jpg"}}
+          {:sort 51
+           :fields {:japanese "いいから 早く吐け"
+                    :english ""
+                    :audio "shirokuma_11-51.mp3"
+                    :screenshot "shirokuma_11-51.jpg"}}
+          {:sort 52
+           :fields {:japanese "って… 僕 犯人じゃないから！"
+                    :english ""
+                    :audio "shirokuma_11-52.mp3"
+                    :screenshot "shirokuma_11-52.jpg"}}
+          {:sort 53
+           :fields {:japanese "さっき 公園で 目撃しちゃったんだ"
+                    :english ""
+                    :audio "shirokuma_11-53.mp3"
+                    :screenshot "shirokuma_11-53.jpg"}}
+          {:sort 54
+           :fields {:japanese "ペン子さん！"
+                    :english ""
+                    :audio "shirokuma_11-54.mp3"
+                    :screenshot "shirokuma_11-54.jpg"}}
+          {:sort 55
+           :fields {:japanese "こんなところで めぐり会うなんて"
+                    :english ""
+                    :audio "shirokuma_11-55.mp3"
+                    :screenshot "shirokuma_11-55.jpg"}}
+          {:sort 56
+           :fields {:japanese "運命 感じちゃうな！"
+                    :english ""
+                    :audio "shirokuma_11-56.mp3"
+                    :screenshot "shirokuma_11-56.jpg"}}
+          {:sort 57
+           :fields {:japanese "やぁ！ 偶然ですねペン…"
+                    :english ""
+                    :audio "shirokuma_11-57.mp3"
+                    :screenshot "shirokuma_11-57.jpg"}}
+          {:sort 58
+           :fields {:japanese "お待たせ～"
+                    :english ""
+                    :audio "shirokuma_11-58.mp3"
+                    :screenshot "shirokuma_11-58.jpg"}}
+          {:sort 59
+           :fields {:japanese "じゃあ 行きましょう"
+                    :english ""
+                    :audio "shirokuma_11-59.mp3"
+                    :screenshot "shirokuma_11-59.jpg"}}
+          {:sort 60
+           :fields {:japanese "ゾウガメさん？"
+                    :english ""
+                    :audio "shirokuma_11-60.mp3"
+                    :screenshot "shirokuma_11-60.jpg"}}
+          {:sort 61
+           :fields {:japanese "本当に？"
+                    :english ""
+                    :audio "shirokuma_11-61.mp3"
+                    :screenshot "shirokuma_11-61.jpg"}}
+          {:sort 62
+           :fields {:japanese "ゾウガメさんが？"
+                    :english ""
+                    :audio "shirokuma_11-62.mp3"
+                    :screenshot "shirokuma_11-62.jpg"}}
+          {:sort 63
+           :fields {:japanese "そう… ペン子さんと待ち合わせて デートしてたんだ"
+                    :english ""
+                    :audio "shirokuma_11-63.mp3"
+                    :screenshot "shirokuma_11-63.jpg"}}
+          {:sort 64
+           :fields {:japanese "ステキなカフェですね"
+                    :english ""
+                    :audio "shirokuma_11-64.mp3"
+                    :screenshot "shirokuma_11-64.jpg"}}
+          {:sort 65
+           :fields {:japanese "僕… ここに 甲羅干しに来るんです～"
+                    :english ""
+                    :audio "shirokuma_11-65.mp3"
+                    :screenshot "shirokuma_11-65.jpg"}}
+          {:sort 66
+           :fields {:japanese "まぁ！"
+                    :english ""
+                    :audio "shirokuma_11-66.mp3"
+                    :screenshot "shirokuma_11-66.jpg"}}
+          {:sort 67
+           :fields {:japanese "僕も食べたいな～"
+                    :english ""
+                    :audio "shirokuma_11-67.mp3"
+                    :screenshot "shirokuma_11-67.jpg"}}
+          {:sort 68
+           :fields {:japanese "はい"
+                    :english ""
+                    :audio "shirokuma_11-68.mp3"
+                    :screenshot "shirokuma_11-68.jpg"}}
+          {:sort 69
+           :fields {:japanese "いい天気"
+                    :english ""
+                    :audio "shirokuma_11-69.mp3"
+                    :screenshot "shirokuma_11-69.jpg"}}
+          {:sort 70
+           :fields {:japanese "だね～"
+                    :english ""
+                    :audio "shirokuma_11-70.mp3"
+                    :screenshot "shirokuma_11-70.jpg"}}
+          {:sort 71
+           :fields {:japanese "２人で楽しそうにお茶飲んだり"
+                    :english ""
+                    :audio "shirokuma_11-71.mp3"
+                    :screenshot "shirokuma_11-71.jpg"}}
+          {:sort 72
+           :fields {:japanese "あ～んってしたり ボートに乗ってたんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-72.mp3"
+                    :screenshot "shirokuma_11-72.jpg"}}
+          {:sort 73
+           :fields {:japanese "それ どこで聞いてたの？"
+                    :english ""
+                    :audio "shirokuma_11-73.mp3"
+                    :screenshot "shirokuma_11-73.jpg"}}
+          {:sort 74
+           :fields {:japanese "そりゃ…"
+                    :english ""
+                    :audio "shirokuma_11-74.mp3"
+                    :screenshot "shirokuma_11-74.jpg"}}
+          {:sort 75
+           :fields {:japanese "なんだか涙ぐましいね"
+                    :english ""
+                    :audio "shirokuma_11-75.mp3"
+                    :screenshot "shirokuma_11-75.jpg"}}
+          {:sort 76
+           :fields {:japanese "でも それだけじゃ"
+                    :english ""
+                    :audio "shirokuma_11-76.mp3"
+                    :screenshot "shirokuma_11-76.jpg"}}
+          {:sort 77
+           :fields {:japanese "恋人同士かどうかわかんないんじゃない？"
+                    :english ""
+                    :audio "shirokuma_11-77.mp3"
+                    :screenshot "shirokuma_11-77.jpg"}}
+          {:sort 78
+           :fields {:japanese "それが 決定的なことに…"
+                    :english ""
+                    :audio "shirokuma_11-78.mp3"
+                    :screenshot "shirokuma_11-78.jpg"}}
+          {:sort 79
+           :fields {:japanese "私… 大好きなんですよね"
+                    :english ""
+                    :audio "shirokuma_11-79.mp3"
+                    :screenshot "shirokuma_11-79.jpg"}}
+          {:sort 80
+           :fields {:japanese "カ メ…"
+                    :english ""
+                    :audio "shirokuma_11-80.mp3"
+                    :screenshot "shirokuma_11-80.jpg"}}
+          {:sort 81
+           :fields {:japanese "そんな～っ！"
+                    :english ""
+                    :audio "shirokuma_11-81.mp3"
+                    :screenshot "shirokuma_11-81.jpg"}}
+          {:sort 82
+           :fields {:japanese "知らなかった… ペン子さん カメが大好きだったなんて…"
+                    :english ""
+                    :audio "shirokuma_11-82.mp3"
+                    :screenshot "shirokuma_11-82.jpg"}}
+          {:sort 83
+           :fields {:japanese "カメのどこがいいんだろう？"
+                    :english ""
+                    :audio "shirokuma_11-83.mp3"
+                    :screenshot "shirokuma_11-83.jpg"}}
+          {:sort 84
+           :fields {:japanese "ねぇどこがいいんだと思う？"
+                    :english ""
+                    :audio "shirokuma_11-84.mp3"
+                    :screenshot "shirokuma_11-84.jpg"}}
+          {:sort 85
+           :fields {:japanese "はっきり言ってよ！"
+                    :english ""
+                    :audio "shirokuma_11-85.mp3"
+                    :screenshot "shirokuma_11-85.jpg"}}
+          {:sort 86
+           :fields {:japanese "こ… 甲羅があるとこですかね？"
+                    :english ""
+                    :audio "shirokuma_11-86.mp3"
+                    :screenshot "shirokuma_11-86.jpg"}}
+          {:sort 87
+           :fields {:japanese "首とか手足が引っ込むところも キュートかも"
+                    :english ""
+                    :audio "shirokuma_11-87.mp3"
+                    :screenshot "shirokuma_11-87.jpg"}}
+          {:sort 88
+           :fields {:japanese "千年生きるのはすごいよね"
+                    :english ""
+                    :audio "shirokuma_11-88.mp3"
+                    :screenshot "shirokuma_11-88.jpg"}}
+          {:sort 89
+           :fields {:japanese "ペ… ペンギンにだって いいとこあるでしょ？"
+                    :english ""
+                    :audio "shirokuma_11-89.mp3"
+                    :screenshot "shirokuma_11-89.jpg"}}
+          {:sort 90
+           :fields {:japanese "ないの！？"
+                    :english ""
+                    :audio "shirokuma_11-90.mp3"
+                    :screenshot "shirokuma_11-90.jpg"}}
+          {:sort 91
+           :fields {:japanese "負けてる… 完璧に負けてるよ"
+                    :english ""
+                    :audio "shirokuma_11-91.mp3"
+                    :screenshot "shirokuma_11-91.jpg"}}
+          {:sort 92
+           :fields {:japanese "僕はどうして ペンギンに生まれたんだろう"
+                    :english ""
+                    :audio "shirokuma_11-92.mp3"
+                    :screenshot "shirokuma_11-92.jpg"}}
+          {:sort 93
+           :fields {:japanese "お母さん！ どうして 僕を カメに生んでくれなかったの！？"
+                    :english ""
+                    :audio "shirokuma_11-93.mp3"
+                    :screenshot "shirokuma_11-93.jpg"}}
+          {:sort 94
+           :fields {:japanese "ペンギンさん あのね"
+                    :english ""
+                    :audio "shirokuma_11-94.mp3"
+                    :screenshot "shirokuma_11-94.jpg"}}
+          {:sort 95
+           :fields {:japanese "ペンギンからカメは生まれないんだよ"
+                    :english ""
+                    :audio "shirokuma_11-95.mp3"
+                    :screenshot "shirokuma_11-95.jpg"}}
+          {:sort 96
+           :fields {:japanese "わかってるよ！"
+                    :english ""
+                    :audio "shirokuma_11-96.mp3"
+                    :screenshot "shirokuma_11-96.jpg"}}
+          {:sort 97
+           :fields {:japanese "あ～あ… こんなことなら思い切って"
+                    :english ""
+                    :audio "shirokuma_11-97.mp3"
+                    :screenshot "shirokuma_11-97.jpg"}}
+          {:sort 98
+           :fields {:japanese "ペン子さんを ドライブに誘っとくんだった"
+                    :english ""
+                    :audio "shirokuma_11-98.mp3"
+                    :screenshot "shirokuma_11-98.jpg"}}
+          {:sort 99
+           :fields {:japanese "い… 今からでも遅くないですよ"
+                    :english ""
+                    :audio "shirokuma_11-99.mp3"
+                    :screenshot "shirokuma_11-99.jpg"}}
+          {:sort 100
+           :fields {:japanese "せっかく免許も取ったんだし…"
+                    :english ""
+                    :audio "shirokuma_11-100.mp3"
+                    :screenshot "shirokuma_11-100.jpg"}}
+          {:sort 101
+           :fields {:japanese "そ… そうだよね！"
+                    :english ""
+                    :audio "shirokuma_11-101.mp3"
+                    :screenshot "shirokuma_11-101.jpg"}}
+          {:sort 102
+           :fields {:japanese "ペン子さんカメ好きなら"
+                    :english ""
+                    :audio "shirokuma_11-102.mp3"
+                    :screenshot "shirokuma_11-102.jpg"}}
+          {:sort 103
+           :fields {:japanese "速い乗り物は 好きじゃないかもね"
+                    :english ""
+                    :audio "shirokuma_11-103.mp3"
+                    :screenshot "shirokuma_11-103.jpg"}}
+          {:sort 104
+           :fields {:japanese "ゆっくりじゃないとダメなのか～！"
+                    :english ""
+                    :audio "shirokuma_11-104.mp3"
+                    :screenshot "shirokuma_11-104.jpg"}}
+          {:sort 105
+           :fields {:japanese "やっぱ ダメだ…"
+                    :english ""
+                    :audio "shirokuma_11-105.mp3"
+                    :screenshot "shirokuma_11-105.jpg"}}
+          {:sort 106
+           :fields {:japanese "もう きっぱり ペン子さんのことは諦めよう"
+                    :english ""
+                    :audio "shirokuma_11-106.mp3"
+                    :screenshot "shirokuma_11-106.jpg"}}
+          {:sort 107
+           :fields {:japanese "そうですね"
+                    :english ""
+                    :audio "shirokuma_11-107.mp3"
+                    :screenshot "shirokuma_11-107.jpg"}}
+          {:sort 108
+           :fields {:japanese "また ステキな子が現れるよ"
+                    :english ""
+                    :audio "shirokuma_11-108.mp3"
+                    :screenshot "shirokuma_11-108.jpg"}}
+          {:sort 109
+           :fields {:japanese "そうだよね いつまでも 引きずってちゃダメだよね"
+                    :english ""
+                    :audio "shirokuma_11-109.mp3"
+                    :screenshot "shirokuma_11-109.jpg"}}
+          {:sort 110
+           :fields {:japanese "そうですよ"
+                    :english ""
+                    :audio "shirokuma_11-110.mp3"
+                    :screenshot "shirokuma_11-110.jpg"}}
+          {:sort 111
+           :fields {:japanese "やっぱ 諦めちゃダメでしょ！"
+                    :english ""
+                    :audio "shirokuma_11-111.mp3"
+                    :screenshot "shirokuma_11-111.jpg"}}
+          {:sort 112
+           :fields {:japanese "どっちなの？"
+                    :english ""
+                    :audio "shirokuma_11-112.mp3"
+                    :screenshot "shirokuma_11-112.jpg"}}
+          {:sort 113
+           :fields {:japanese "でも ペン子さんには ゾウガメさんが…"
+                    :english ""
+                    :audio "shirokuma_11-113.mp3"
+                    :screenshot "shirokuma_11-113.jpg"}}
+          {:sort 114
+           :fields {:japanese "ペンギンがゾウガメなんかに 負けてたまるか～っ！"
+                    :english ""
+                    :audio "shirokuma_11-114.mp3"
+                    :screenshot "shirokuma_11-114.jpg"}}
+          {:sort 115
+           :fields {:japanese "あっ ゾウガメさん"
+                    :english ""
+                    :audio "shirokuma_11-115.mp3"
+                    :screenshot "shirokuma_11-115.jpg"}}
+          {:sort 116
+           :fields {:japanese "こんにちは～"
+                    :english ""
+                    :audio "shirokuma_11-116.mp3"
+                    :screenshot "shirokuma_11-116.jpg"}}
+          {:sort 117
+           :fields {:japanese "ライバル登場だよ"
+                    :english ""
+                    :audio "shirokuma_11-117.mp3"
+                    :screenshot "shirokuma_11-117.jpg"}}
+          {:sort 118
+           :fields {:japanese "ペン子さんの彼氏 来た"
+                    :english ""
+                    :audio "shirokuma_11-118.mp3"
+                    :screenshot "shirokuma_11-118.jpg"}}
+          {:sort 119
+           :fields {:japanese "ダメだよ そんなこと言っちゃ"
+                    :english ""
+                    :audio "shirokuma_11-119.mp3"
+                    :screenshot "shirokuma_11-119.jpg"}}
+          {:sort 120
+           :fields {:japanese "これから決闘するの？"
+                    :english ""
+                    :audio "shirokuma_11-120.mp3"
+                    :screenshot "shirokuma_11-120.jpg"}}
+          {:sort 121
+           :fields {:japanese "しないよ"
+                    :english ""
+                    :audio "shirokuma_11-121.mp3"
+                    :screenshot "shirokuma_11-121.jpg"}}
+          {:sort 122
+           :fields {:japanese "えっと こういうのたしか…"
+                    :english ""
+                    :audio "shirokuma_11-122.mp3"
+                    :screenshot "shirokuma_11-122.jpg"}}
+          {:sort 123
+           :fields {:japanese "シャバダバ？"
+                    :english ""
+                    :audio "shirokuma_11-123.mp3"
+                    :screenshot "shirokuma_11-123.jpg"}}
+          {:sort 124
+           :fields {:japanese "修羅場だよ"
+                    :english ""
+                    :audio "shirokuma_11-124.mp3"
+                    :screenshot "shirokuma_11-124.jpg"}}
+          {:sort 125
+           :fields {:japanese "ちょっと黙っててよ！"
+                    :english ""
+                    :audio "shirokuma_11-125.mp3"
+                    :screenshot "shirokuma_11-125.jpg"}}
+          {:sort 126
+           :fields {:japanese "とにかく ペン子さんと どういうおつきあいなのか"
+                    :english ""
+                    :audio "shirokuma_11-126.mp3"
+                    :screenshot "shirokuma_11-126.jpg"}}
+          {:sort 127
+           :fields {:japanese "はっきりさせないと"
+                    :english ""
+                    :audio "shirokuma_11-127.mp3"
+                    :screenshot "shirokuma_11-127.jpg"}}
+          {:sort 128
+           :fields {:japanese "ゾ… ゾウガメ君！"
+                    :english ""
+                    :audio "shirokuma_11-128.mp3"
+                    :screenshot "shirokuma_11-128.jpg"}}
+          {:sort 129
+           :fields {:japanese "なに～？"
+                    :english ""
+                    :audio "shirokuma_11-129.mp3"
+                    :screenshot "shirokuma_11-129.jpg"}}
+          {:sort 130
+           :fields {:japanese "あ… いや…"
+                    :english ""
+                    :audio "shirokuma_11-130.mp3"
+                    :screenshot "shirokuma_11-130.jpg"}}
+          {:sort 131
+           :fields {:japanese "いい天気だね"
+                    :english ""
+                    :audio "shirokuma_11-131.mp3"
+                    :screenshot "shirokuma_11-131.jpg"}}
+          {:sort 132
+           :fields {:japanese "ペンギンさん はっきりさせるんじゃ なかったの？"
+                    :english ""
+                    :audio "shirokuma_11-132.mp3"
+                    :screenshot "shirokuma_11-132.jpg"}}
+          {:sort 133
+           :fields {:japanese "わかってるよ！"
+                    :english ""
+                    :audio "shirokuma_11-133.mp3"
+                    :screenshot "shirokuma_11-133.jpg"}}
+          {:sort 134
+           :fields {:japanese "どうかした～？"
+                    :english ""
+                    :audio "shirokuma_11-134.mp3"
+                    :screenshot "shirokuma_11-134.jpg"}}
+          {:sort 135
+           :fields {:japanese "あ… いや… あのさ！ この間さ 公園で…"
+                    :english ""
+                    :audio "shirokuma_11-135.mp3"
+                    :screenshot "shirokuma_11-135.jpg"}}
+          {:sort 136
+           :fields {:japanese "すごくおいしいマイワシを 食べたんだよね～"
+                    :english ""
+                    :audio "shirokuma_11-136.mp3"
+                    :screenshot "shirokuma_11-136.jpg"}}
+          {:sort 137
+           :fields {:japanese "おいしかった～"
+                    :english ""
+                    :audio "shirokuma_11-137.mp3"
+                    :screenshot "shirokuma_11-137.jpg"}}
+          {:sort 138
+           :fields {:japanese "違うでしょ？"
+                    :english ""
+                    :audio "shirokuma_11-138.mp3"
+                    :screenshot "shirokuma_11-138.jpg"}}
+          {:sort 139
+           :fields {:japanese "わかってるよ！"
+                    :english ""
+                    :audio "shirokuma_11-139.mp3"
+                    :screenshot "shirokuma_11-139.jpg"}}
+          {:sort 140
+           :fields {:japanese "話には順序ってものが…"
+                    :english ""
+                    :audio "shirokuma_11-140.mp3"
+                    :screenshot "shirokuma_11-140.jpg"}}
+          {:sort 141
+           :fields {:japanese "そういえば あの公園でさ"
+                    :english ""
+                    :audio "shirokuma_11-141.mp3"
+                    :screenshot "shirokuma_11-141.jpg"}}
+          {:sort 142
+           :fields {:japanese "女の子のペンギンと 一緒にいたじゃない？"
+                    :english ""
+                    :audio "shirokuma_11-142.mp3"
+                    :screenshot "shirokuma_11-142.jpg"}}
+          {:sort 143
+           :fields {:japanese "あの公園 気持いいよね"
+                    :english ""
+                    :audio "shirokuma_11-143.mp3"
+                    :screenshot "shirokuma_11-143.jpg"}}
+          {:sort 144
+           :fields {:japanese "で ゾウガメさんとペン子さんは どういう関係？"
+                    :english ""
+                    :audio "shirokuma_11-144.mp3"
+                    :screenshot "shirokuma_11-144.jpg"}}
+          {:sort 145
+           :fields {:japanese "あからさまに聞かないでよ！"
+                    :english ""
+                    :audio "shirokuma_11-145.mp3"
+                    :screenshot "shirokuma_11-145.jpg"}}
+          {:sort 146
+           :fields {:japanese "それで ゾウガメさんは どうして一緒に？"
+                    :english ""
+                    :audio "shirokuma_11-146.mp3"
+                    :screenshot "shirokuma_11-146.jpg"}}
+          {:sort 147
+           :fields {:japanese "笹子さんまで！？"
+                    :english ""
+                    :audio "shirokuma_11-147.mp3"
+                    :screenshot "shirokuma_11-147.jpg"}}
+          {:sort 148
+           :fields {:japanese "なんで 公園に一緒にいたの？"
+                    :english ""
+                    :audio "shirokuma_11-148.mp3"
+                    :screenshot "shirokuma_11-148.jpg"}}
+          {:sort 149
+           :fields {:japanese "誘われて～"
+                    :english ""
+                    :audio "shirokuma_11-149.mp3"
+                    :screenshot "shirokuma_11-149.jpg"}}
+          {:sort 150
+           :fields {:japanese "ペン子さんに 誘われた！？"
+                    :english ""
+                    :audio "shirokuma_11-150.mp3"
+                    :screenshot "shirokuma_11-150.jpg"}}
+          {:sort 151
+           :fields {:japanese "好きだって～"
+                    :english ""
+                    :audio "shirokuma_11-151.mp3"
+                    :screenshot "shirokuma_11-151.jpg"}}
+          {:sort 152
+           :fields {:japanese "カ… メ…"
+                    :english ""
+                    :audio "shirokuma_11-152.mp3"
+                    :screenshot "shirokuma_11-152.jpg"}}
+          {:sort 153
+           :fields {:japanese "ゾウガメさん ペン子さんとお幸せに！ うわ～ん！"
+                    :english ""
+                    :audio "shirokuma_11-153.mp3"
+                    :screenshot "shirokuma_11-153.jpg"}}
+          {:sort 154
+           :fields {:japanese "ラ…"
+                    :english ""
+                    :audio "shirokuma_11-154.mp3"
+                    :screenshot "shirokuma_11-154.jpg"}}
+          {:sort 155
+           :fields {:japanese "ラ？"
+                    :english ""
+                    :audio "shirokuma_11-155.mp3"
+                    :screenshot "shirokuma_11-155.jpg"}}
+          {:sort 156
+           :fields {:japanese "いや待てよ"
+                    :english ""
+                    :audio "shirokuma_11-156.mp3"
+                    :screenshot "shirokuma_11-156.jpg"}}
+          {:sort 157
+           :fields {:japanese "ペン子さんが そんなにカメ好きなら…"
+                    :english ""
+                    :audio "shirokuma_11-157.mp3"
+                    :screenshot "shirokuma_11-157.jpg"}}
+          {:sort 158
+           :fields {:japanese "いらっしゃい"
+                    :english ""
+                    :audio "shirokuma_11-158.mp3"
+                    :screenshot "shirokuma_11-158.jpg"}}
+          {:sort 159
+           :fields {:japanese "こんにちは"
+                    :english ""
+                    :audio "shirokuma_11-159.mp3"
+                    :screenshot "shirokuma_11-159.jpg"}}
+          {:sort 160
+           :fields {:japanese "何やってるの ペンギンさん"
+                    :english ""
+                    :audio "shirokuma_11-160.mp3"
+                    :screenshot "shirokuma_11-160.jpg"}}
+          {:sort 161
+           :fields {:japanese "どこから持ってきたんですか？ その甲羅"
+                    :english ""
+                    :audio "shirokuma_11-161.mp3"
+                    :screenshot "shirokuma_11-161.jpg"}}
+          {:sort 162
+           :fields {:japanese "かたい"
+                    :english ""
+                    :audio "shirokuma_11-162.mp3"
+                    :screenshot "shirokuma_11-162.jpg"}}
+          {:sort 163
+           :fields {:japanese "ペン子さんはカメが大好き"
+                    :english ""
+                    :audio "shirokuma_11-163.mp3"
+                    :screenshot "shirokuma_11-163.jpg"}}
+          {:sort 164
+           :fields {:japanese "ああ ペン子さんはね"
+                    :english ""
+                    :audio "shirokuma_11-164.mp3"
+                    :screenshot "shirokuma_11-164.jpg"}}
+          {:sort 165
+           :fields {:japanese "カメじゃなくて"
+                    :english ""
+                    :audio "shirokuma_11-165.mp3"
+                    :screenshot "shirokuma_11-165.jpg"}}
+          {:sort 166
+           :fields {:japanese "大好きなのは カメラ"
+                    :english ""
+                    :audio "shirokuma_11-166.mp3"
+                    :screenshot "shirokuma_11-166.jpg"}}
+          {:sort 167
+           :fields {:japanese "最近 カメラが趣味らしいよ"
+                    :english ""
+                    :audio "shirokuma_11-167.mp3"
+                    :screenshot "shirokuma_11-167.jpg"}}
+          {:sort 168
+           :fields {:japanese "ゾウガメさんも同じ趣味みたいで"
+                    :english ""
+                    :audio "shirokuma_11-168.mp3"
+                    :screenshot "shirokuma_11-168.jpg"}}
+          {:sort 169
+           :fields {:japanese "大好きなのはね カメじゃなくてカメラだよ"
+                    :english ""
+                    :audio "shirokuma_11-169.mp3"
+                    :screenshot "shirokuma_11-169.jpg"}}
+          {:sort 170
+           :fields {:japanese "出直してきます"
+                    :english ""
+                    :audio "shirokuma_11-170.mp3"
+                    :screenshot "shirokuma_11-170.jpg"}}
+          {:sort 171
+           :fields {:japanese "パンダくんの夜遊び"
+                    :english ""
+                    :audio "shirokuma_11-171.mp3"
+                    :screenshot "shirokuma_11-171.jpg"}}
+          {:sort 172
+           :fields {:japanese "お疲れさまでした"
+                    :english ""
+                    :audio "shirokuma_11-172.mp3"
+                    :screenshot "shirokuma_11-172.jpg"}}
+          {:sort 173
+           :fields {:japanese "お疲れさま"
+                    :english ""
+                    :audio "shirokuma_11-173.mp3"
+                    :screenshot "shirokuma_11-173.jpg"}}
+          {:sort 174
+           :fields {:japanese "パンダくん 閉店なんだけど"
+                    :english ""
+                    :audio "shirokuma_11-174.mp3"
+                    :screenshot "shirokuma_11-174.jpg"}}
+          {:sort 175
+           :fields {:japanese "パンダくん？"
+                    :english ""
+                    :audio "shirokuma_11-175.mp3"
+                    :screenshot "shirokuma_11-175.jpg"}}
+          {:sort 176
+           :fields {:japanese "ああ おはよう"
+                    :english ""
+                    :audio "shirokuma_11-176.mp3"
+                    :screenshot "shirokuma_11-176.jpg"}}
+          {:sort 177
+           :fields {:japanese "もう 夜だよ"
+                    :english ""
+                    :audio "shirokuma_11-177.mp3"
+                    :screenshot "shirokuma_11-177.jpg"}}
+          {:sort 178
+           :fields {:japanese "グリズリーくん"
+                    :english ""
+                    :audio "shirokuma_11-178.mp3"
+                    :screenshot "shirokuma_11-178.jpg"}}
+          {:sort 179
+           :fields {:japanese "よう ちょっと遊びに行こうぜ"
+                    :english ""
+                    :audio "shirokuma_11-179.mp3"
+                    :screenshot "shirokuma_11-179.jpg"}}
+          {:sort 180
+           :fields {:japanese "いいよ"
+                    :english ""
+                    :audio "shirokuma_11-180.mp3"
+                    :screenshot "shirokuma_11-180.jpg"}}
+          {:sort 181
+           :fields {:japanese "遊びに行くの？"
+                    :english ""
+                    :audio "shirokuma_11-181.mp3"
+                    :screenshot "shirokuma_11-181.jpg"}}
+          {:sort 182
+           :fields {:japanese "僕も行きたい！"
+                    :english ""
+                    :audio "shirokuma_11-182.mp3"
+                    :screenshot "shirokuma_11-182.jpg"}}
+          {:sort 183
+           :fields {:japanese "ガキの行くところじゃねぇんだよ"
+                    :english ""
+                    :audio "shirokuma_11-183.mp3"
+                    :screenshot "shirokuma_11-183.jpg"}}
+          {:sort 184
+           :fields {:japanese "大人の夜遊びだ"
+                    :english ""
+                    :audio "shirokuma_11-184.mp3"
+                    :screenshot "shirokuma_11-184.jpg"}}
+          {:sort 185
+           :fields {:japanese "夜遊び？"
+                    :english ""
+                    :audio "shirokuma_11-185.mp3"
+                    :screenshot "shirokuma_11-185.jpg"}}
+          {:sort 186
+           :fields {:japanese "なんか すごくおもしろそう"
+                    :english ""
+                    :audio "shirokuma_11-186.mp3"
+                    :screenshot "shirokuma_11-186.jpg"}}
+          {:sort 187
+           :fields {:japanese "何でついてくるんだよ"
+                    :english ""
+                    :audio "shirokuma_11-187.mp3"
+                    :screenshot "shirokuma_11-187.jpg"}}
+          {:sort 188
+           :fields {:japanese "グリズリーくんが 誘ったんじゃない"
+                    :english ""
+                    :audio "shirokuma_11-188.mp3"
+                    :screenshot "shirokuma_11-188.jpg"}}
+          {:sort 189
+           :fields {:japanese "お前じゃねぇよ"
+                    :english ""
+                    :audio "shirokuma_11-189.mp3"
+                    :screenshot "shirokuma_11-189.jpg"}}
+          {:sort 190
+           :fields {:japanese "コイツだよ"
+                    :english ""
+                    :audio "shirokuma_11-190.mp3"
+                    :screenshot "shirokuma_11-190.jpg"}}
+          {:sort 191
+           :fields {:japanese "どこ行くの？"
+                    :english ""
+                    :audio "shirokuma_11-191.mp3"
+                    :screenshot "shirokuma_11-191.jpg"}}
+          {:sort 192
+           :fields {:japanese "というわけで パンダくん"
+                    :english ""
+                    :audio "shirokuma_11-192.mp3"
+                    :screenshot "shirokuma_11-192.jpg"}}
+          {:sort 193
+           :fields {:japanese "今日は残念だけど中止だから帰ろう"
+                    :english ""
+                    :audio "shirokuma_11-193.mp3"
+                    :screenshot "shirokuma_11-193.jpg"}}
+          {:sort 194
+           :fields {:japanese "残念"
+                    :english ""
+                    :audio "shirokuma_11-194.mp3"
+                    :screenshot "shirokuma_11-194.jpg"}}
+          {:sort 195
+           :fields {:japanese "何でそうなるんだ！"
+                    :english ""
+                    :audio "shirokuma_11-195.mp3"
+                    :screenshot "shirokuma_11-195.jpg"}}
+          {:sort 196
+           :fields {:japanese "ちょっと待て！"
+                    :english ""
+                    :audio "shirokuma_11-196.mp3"
+                    :screenshot "shirokuma_11-196.jpg"}}
+          {:sort 197
+           :fields {:japanese "やっぱり行くの？"
+                    :english ""
+                    :audio "shirokuma_11-197.mp3"
+                    :screenshot "shirokuma_11-197.jpg"}}
+          {:sort 198
+           :fields {:japanese "行くに決まってんだろ！"
+                    :english ""
+                    :audio "shirokuma_11-198.mp3"
+                    :screenshot "shirokuma_11-198.jpg"}}
+          {:sort 199
+           :fields {:japanese "すごい ここ何？"
+                    :english ""
+                    :audio "shirokuma_11-199.mp3"
+                    :screenshot "shirokuma_11-199.jpg"}}
+          {:sort 200
+           :fields {:japanese "バッティングセンター"
+                    :english ""
+                    :audio "shirokuma_11-200.mp3"
+                    :screenshot "shirokuma_11-200.jpg"}}
+          {:sort 201
+           :fields {:japanese "来たことねぇのか"
+                    :english ""
+                    :audio "shirokuma_11-201.mp3"
+                    :screenshot "shirokuma_11-201.jpg"}}
+          {:sort 202
+           :fields {:japanese "何やってんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-202.mp3"
+                    :screenshot "shirokuma_11-202.jpg"}}
+          {:sort 203
+           :fields {:japanese "ぶら下がって遊ぶとこじゃねぇんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-203.mp3"
+                    :screenshot "shirokuma_11-203.jpg"}}
+          {:sort 204
+           :fields {:japanese "そうなの？"
+                    :english ""
+                    :audio "shirokuma_11-204.mp3"
+                    :screenshot "shirokuma_11-204.jpg"}}
+          {:sort 205
+           :fields {:japanese "ったく…"
+                    :english ""
+                    :audio "shirokuma_11-205.mp3"
+                    :screenshot "shirokuma_11-205.jpg"}}
+          {:sort 206
+           :fields {:japanese "これ気持いいね"
+                    :english ""
+                    :audio "shirokuma_11-206.mp3"
+                    :screenshot "shirokuma_11-206.jpg"}}
+          {:sort 207
+           :fields {:japanese "だから そうじゃねぇんだよ"
+                    :english ""
+                    :audio "shirokuma_11-207.mp3"
+                    :screenshot "shirokuma_11-207.jpg"}}
+          {:sort 208
+           :fields {:japanese "結構 凝りがほぐれるね"
+                    :english ""
+                    :audio "shirokuma_11-208.mp3"
+                    :screenshot "shirokuma_11-208.jpg"}}
+          {:sort 209
+           :fields {:japanese "お前までやってんじゃねぇ！"
+                    :english ""
+                    :audio "shirokuma_11-209.mp3"
+                    :screenshot "shirokuma_11-209.jpg"}}
+          {:sort 210
+           :fields {:japanese "じゃあ ここで何して遊ぶの？"
+                    :english ""
+                    :audio "shirokuma_11-210.mp3"
+                    :screenshot "shirokuma_11-210.jpg"}}
+          {:sort 211
+           :fields {:japanese "向こうから来た球を 打ち返すんだよ"
+                    :english ""
+                    :audio "shirokuma_11-211.mp3"
+                    :screenshot "shirokuma_11-211.jpg"}}
+          {:sort 212
+           :fields {:japanese "こうやるんだ"
+                    :english ""
+                    :audio "shirokuma_11-212.mp3"
+                    :screenshot "shirokuma_11-212.jpg"}}
+          {:sort 213
+           :fields {:japanese "ナイスキャッチ"
+                    :english ""
+                    :audio "shirokuma_11-213.mp3"
+                    :screenshot "shirokuma_11-213.jpg"}}
+          {:sort 214
+           :fields {:japanese "シロクマくんすご～い！"
+                    :english ""
+                    :audio "shirokuma_11-214.mp3"
+                    :screenshot "shirokuma_11-214.jpg"}}
+          {:sort 215
+           :fields {:japanese "ピッチャーライナーだね"
+                    :english ""
+                    :audio "shirokuma_11-215.mp3"
+                    :screenshot "shirokuma_11-215.jpg"}}
+          {:sort 216
+           :fields {:japanese "何やってんだよ！！"
+                    :english ""
+                    :audio "shirokuma_11-216.mp3"
+                    :screenshot "shirokuma_11-216.jpg"}}
+          {:sort 217
+           :fields {:japanese "僕もやる"
+                    :english ""
+                    :audio "shirokuma_11-217.mp3"
+                    :screenshot "shirokuma_11-217.jpg"}}
+          {:sort 218
+           :fields {:japanese "やらなくていいんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-218.mp3"
+                    :screenshot "shirokuma_11-218.jpg"}}
+          {:sort 219
+           :fields {:japanese "大当たり！"
+                    :english ""
+                    :audio "shirokuma_11-219.mp3"
+                    :screenshot "shirokuma_11-219.jpg"}}
+          {:sort 220
+           :fields {:japanese "グリズリーさんやったね！"
+                    :english ""
+                    :audio "shirokuma_11-220.mp3"
+                    :screenshot "shirokuma_11-220.jpg"}}
+          {:sort 221
+           :fields {:japanese "なんかもうやる気なくなったぜ"
+                    :english ""
+                    :audio "shirokuma_11-221.mp3"
+                    :screenshot "shirokuma_11-221.jpg"}}
+          {:sort 222
+           :fields {:japanese "じゃあ僕がお手本を"
+                    :english ""
+                    :audio "shirokuma_11-222.mp3"
+                    :screenshot "shirokuma_11-222.jpg"}}
+          {:sort 223
+           :fields {:japanese "さあ 来い！"
+                    :english ""
+                    :audio "shirokuma_11-223.mp3"
+                    :screenshot "shirokuma_11-223.jpg"}}
+          {:sort 224
+           :fields {:japanese "バット 持ちすぎだろう！"
+                    :english ""
+                    :audio "shirokuma_11-224.mp3"
+                    :screenshot "shirokuma_11-224.jpg"}}
+          {:sort 225
+           :fields {:japanese "じゃあ 改めてお手本を"
+                    :english ""
+                    :audio "shirokuma_11-225.mp3"
+                    :screenshot "shirokuma_11-225.jpg"}}
+          {:sort 226
+           :fields {:japanese "バット 使えよ！"
+                    :english ""
+                    :audio "shirokuma_11-226.mp3"
+                    :screenshot "shirokuma_11-226.jpg"}}
+          {:sort 227
+           :fields {:japanese "もう いい… パンダ とにかく やってみろ"
+                    :english ""
+                    :audio "shirokuma_11-227.mp3"
+                    :screenshot "shirokuma_11-227.jpg"}}
+          {:sort 228
+           :fields {:japanese "パンダくん バットを構えて よ～く球を見るんだよ"
+                    :english ""
+                    :audio "shirokuma_11-228.mp3"
+                    :screenshot "shirokuma_11-228.jpg"}}
+          {:sort 229
+           :fields {:japanese "いや そうじゃなくてな…"
+                    :english ""
+                    :audio "shirokuma_11-229.mp3"
+                    :screenshot "shirokuma_11-229.jpg"}}
+          {:sort 230
+           :fields {:japanese "ボールを しっかり見て"
+                    :english ""
+                    :audio "shirokuma_11-230.mp3"
+                    :screenshot "shirokuma_11-230.jpg"}}
+          {:sort 231
+           :fields {:japanese "じ～～～"
+                    :english ""
+                    :audio "shirokuma_11-231.mp3"
+                    :screenshot "shirokuma_11-231.jpg"}}
+          {:sort 232
+           :fields {:japanese "こう？"
+                    :english ""
+                    :audio "shirokuma_11-232.mp3"
+                    :screenshot "shirokuma_11-232.jpg"}}
+          {:sort 233
+           :fields {:japanese "打てよ"
+                    :english ""
+                    :audio "shirokuma_11-233.mp3"
+                    :screenshot "shirokuma_11-233.jpg"}}
+          {:sort 234
+           :fields {:japanese "やっぱり？"
+                    :english ""
+                    :audio "shirokuma_11-234.mp3"
+                    :screenshot "shirokuma_11-234.jpg"}}
+          {:sort 235
+           :fields {:japanese "やっぱりじゃねぇ！ バットで当てろ！！"
+                    :english ""
+                    :audio "shirokuma_11-235.mp3"
+                    :screenshot "shirokuma_11-235.jpg"}}
+          {:sort 236
+           :fields {:japanese "ナイスショット"
+                    :english ""
+                    :audio "shirokuma_11-236.mp3"
+                    :screenshot "shirokuma_11-236.jpg"}}
+          {:sort 237
+           :fields {:japanese "やったぁ！"
+                    :english ""
+                    :audio "shirokuma_11-237.mp3"
+                    :screenshot "shirokuma_11-237.jpg"}}
+          {:sort 238
+           :fields {:japanese "ゴルフじゃねぇ！！"
+                    :english ""
+                    :audio "shirokuma_11-238.mp3"
+                    :screenshot "shirokuma_11-238.jpg"}}
+          {:sort 239
+           :fields {:japanese "積み木じゃねぇ！"
+                    :english ""
+                    :audio "shirokuma_11-239.mp3"
+                    :screenshot "shirokuma_11-239.jpg"}}
+          {:sort 240
+           :fields {:japanese "ビリヤードじゃねぇ！"
+                    :english ""
+                    :audio "shirokuma_11-240.mp3"
+                    :screenshot "shirokuma_11-240.jpg"}}
+          {:sort 241
+           :fields {:japanese "ああ おもしろかった"
+                    :english ""
+                    :audio "shirokuma_11-241.mp3"
+                    :screenshot "shirokuma_11-241.jpg"}}
+          {:sort 242
+           :fields {:japanese "全然 バッティングしてねぇけどな"
+                    :english ""
+                    :audio "shirokuma_11-242.mp3"
+                    :screenshot "shirokuma_11-242.jpg"}}
+          {:sort 243
+           :fields {:japanese "次 いくぞ"
+                    :english ""
+                    :audio "shirokuma_11-243.mp3"
+                    :screenshot "shirokuma_11-243.jpg"}}
+          {:sort 244
+           :fields {:japanese "また どこか行くの？"
+                    :english ""
+                    :audio "shirokuma_11-244.mp3"
+                    :screenshot "shirokuma_11-244.jpg"}}
+          {:sort 245
+           :fields {:japanese "夜はこれからだからな"
+                    :english ""
+                    :audio "shirokuma_11-245.mp3"
+                    :screenshot "shirokuma_11-245.jpg"}}
+          {:sort 246
+           :fields {:japanese "これからなんだ…"
+                    :english ""
+                    :audio "shirokuma_11-246.mp3"
+                    :screenshot "shirokuma_11-246.jpg"}}
+          {:sort 247
+           :fields {:japanese "次は どこかな？"
+                    :english ""
+                    :audio "shirokuma_11-247.mp3"
+                    :screenshot "shirokuma_11-247.jpg"}}
+          {:sort 248
+           :fields {:japanese "風呂だ！"
+                    :english ""
+                    :audio "shirokuma_11-248.mp3"
+                    :screenshot "shirokuma_11-248.jpg"}}
+          {:sort 249
+           :fields {:japanese "広い！"
+                    :english ""
+                    :audio "shirokuma_11-249.mp3"
+                    :screenshot "shirokuma_11-249.jpg"}}
+          {:sort 250
+           :fields {:japanese "すごいね！"
+                    :english ""
+                    :audio "shirokuma_11-250.mp3"
+                    :screenshot "shirokuma_11-250.jpg"}}
+          {:sort 251
+           :fields {:japanese "すげぇだろう？"
+                    :english ""
+                    :audio "shirokuma_11-251.mp3"
+                    :screenshot "shirokuma_11-251.jpg"}}
+          {:sort 252
+           :fields {:japanese "本当だ！"
+                    :english ""
+                    :audio "shirokuma_11-252.mp3"
+                    :screenshot "shirokuma_11-252.jpg"}}
+          {:sort 253
+           :fields {:japanese "すごいよ！！"
+                    :english ""
+                    :audio "shirokuma_11-253.mp3"
+                    :screenshot "shirokuma_11-253.jpg"}}
+          {:sort 254
+           :fields {:japanese "そういう すげぇじゃ ねぇんだけどな…"
+                    :english ""
+                    :audio "shirokuma_11-254.mp3"
+                    :screenshot "shirokuma_11-254.jpg"}}
+          {:sort 255
+           :fields {:japanese "ほら ほら"
+                    :english ""
+                    :audio "shirokuma_11-255.mp3"
+                    :screenshot "shirokuma_11-255.jpg"}}
+          {:sort 256
+           :fields {:japanese "まずはちゃんと体洗えよ"
+                    :english ""
+                    :audio "shirokuma_11-256.mp3"
+                    :screenshot "shirokuma_11-256.jpg"}}
+          {:sort 257
+           :fields {:japanese "背中 流してあげようか？"
+                    :english ""
+                    :audio "shirokuma_11-257.mp3"
+                    :screenshot "shirokuma_11-257.jpg"}}
+          {:sort 258
+           :fields {:japanese "うん 頼むよ"
+                    :english ""
+                    :audio "shirokuma_11-258.mp3"
+                    :screenshot "shirokuma_11-258.jpg"}}
+          {:sort 259
+           :fields {:japanese "背中 流してあげようか？"
+                    :english ""
+                    :audio "shirokuma_11-259.mp3"
+                    :screenshot "shirokuma_11-259.jpg"}}
+          {:sort 260
+           :fields {:japanese "おう お前も ちったぁ気が利くじゃねぇか"
+                    :english ""
+                    :audio "shirokuma_11-260.mp3"
+                    :screenshot "shirokuma_11-260.jpg"}}
+          {:sort 261
+           :fields {:japanese "やめろ 何か こそばゆいぞ"
+                    :english ""
+                    :audio "shirokuma_11-261.mp3"
+                    :screenshot "shirokuma_11-261.jpg"}}
+          {:sort 262
+           :fields {:japanese "パンダくん もっと強くこするんだよ"
+                    :english ""
+                    :audio "shirokuma_11-262.mp3"
+                    :screenshot "shirokuma_11-262.jpg"}}
+          {:sort 263
+           :fields {:japanese "イテーッ！！ ツメ 立てんな ツメ！"
+                    :english ""
+                    :audio "shirokuma_11-263.mp3"
+                    :screenshot "shirokuma_11-263.jpg"}}
+          {:sort 264
+           :fields {:japanese "あっ ごめん"
+                    :english ""
+                    :audio "shirokuma_11-264.mp3"
+                    :screenshot "shirokuma_11-264.jpg"}}
+          {:sort 265
+           :fields {:japanese "目に染みるよ"
+                    :english ""
+                    :audio "shirokuma_11-265.mp3"
+                    :screenshot "shirokuma_11-265.jpg"}}
+          {:sort 266
+           :fields {:japanese "早く流せ"
+                    :english ""
+                    :audio "shirokuma_11-266.mp3"
+                    :screenshot "shirokuma_11-266.jpg"}}
+          {:sort 267
+           :fields {:japanese "グリズリーさん…"
+                    :english ""
+                    :audio "shirokuma_11-267.mp3"
+                    :screenshot "shirokuma_11-267.jpg"}}
+          {:sort 268
+           :fields {:japanese "誰？"
+                    :english ""
+                    :audio "shirokuma_11-268.mp3"
+                    :screenshot "shirokuma_11-268.jpg"}}
+          {:sort 269
+           :fields {:japanese "ハア… すっきり"
+                    :english ""
+                    :audio "shirokuma_11-269.mp3"
+                    :screenshot "shirokuma_11-269.jpg"}}
+          {:sort 270
+           :fields {:japanese "グリズリーさんも流してあげるよ"
+                    :english ""
+                    :audio "shirokuma_11-270.mp3"
+                    :screenshot "shirokuma_11-270.jpg"}}
+          {:sort 271
+           :fields {:japanese "おう 頼むぜ"
+                    :english ""
+                    :audio "shirokuma_11-271.mp3"
+                    :screenshot "shirokuma_11-271.jpg"}}
+          {:sort 272
+           :fields {:japanese "アチーッ！！ 熱いじゃねえか！"
+                    :english ""
+                    :audio "shirokuma_11-272.mp3"
+                    :screenshot "shirokuma_11-272.jpg"}}
+          {:sort 273
+           :fields {:japanese "ごめんなさい…"
+                    :english ""
+                    :audio "shirokuma_11-273.mp3"
+                    :screenshot "shirokuma_11-273.jpg"}}
+          {:sort 274
+           :fields {:japanese "赤いほうを回すとお湯で"
+                    :english ""
+                    :audio "shirokuma_11-274.mp3"
+                    :screenshot "shirokuma_11-274.jpg"}}
+          {:sort 275
+           :fields {:japanese "青いほうが水だからな"
+                    :english ""
+                    :audio "shirokuma_11-275.mp3"
+                    :screenshot "shirokuma_11-275.jpg"}}
+          {:sort 276
+           :fields {:japanese "わかった"
+                    :english ""
+                    :audio "shirokuma_11-276.mp3"
+                    :screenshot "shirokuma_11-276.jpg"}}
+          {:sort 277
+           :fields {:japanese "冷てぇ！！ ちゃんと調節しろよ！"
+                    :english ""
+                    :audio "shirokuma_11-277.mp3"
+                    :screenshot "shirokuma_11-277.jpg"}}
+          {:sort 278
+           :fields {:japanese "ごめんなさい…"
+                    :english ""
+                    :audio "shirokuma_11-278.mp3"
+                    :screenshot "shirokuma_11-278.jpg"}}
+          {:sort 279
+           :fields {:japanese "アチーッ！！"
+                    :english ""
+                    :audio "shirokuma_11-279.mp3"
+                    :screenshot "shirokuma_11-279.jpg"}}
+          {:sort 280
+           :fields {:japanese "冷てぇ！！"
+                    :english ""
+                    :audio "shirokuma_11-280.mp3"
+                    :screenshot "shirokuma_11-280.jpg"}}
+          {:sort 281
+           :fields {:japanese "アチーッ！！"
+                    :english ""
+                    :audio "shirokuma_11-281.mp3"
+                    :screenshot "shirokuma_11-281.jpg"}}
+          {:sort 282
+           :fields {:japanese "冷てぇ！！"
+                    :english ""
+                    :audio "shirokuma_11-282.mp3"
+                    :screenshot "shirokuma_11-282.jpg"}}
+          {:sort 283
+           :fields {:japanese "えっと… えっと…"
+                    :english ""
+                    :audio "shirokuma_11-283.mp3"
+                    :screenshot "shirokuma_11-283.jpg"}}
+          {:sort 284
+           :fields {:japanese "パンダ… もういい 気持だけ もらっとく"
+                    :english ""
+                    :audio "shirokuma_11-284.mp3"
+                    :screenshot "shirokuma_11-284.jpg"}}
+          {:sort 285
+           :fields {:japanese "いいニオイになったね"
+                    :english ""
+                    :audio "shirokuma_11-285.mp3"
+                    :screenshot "shirokuma_11-285.jpg"}}
+          {:sort 286
+           :fields {:japanese "何の香りだ？ ここのシャンプー"
+                    :english ""
+                    :audio "shirokuma_11-286.mp3"
+                    :screenshot "shirokuma_11-286.jpg"}}
+          {:sort 287
+           :fields {:japanese "うん すごく おいしそうなニオイ"
+                    :english ""
+                    :audio "shirokuma_11-287.mp3"
+                    :screenshot "shirokuma_11-287.jpg"}}
+          {:sort 288
+           :fields {:japanese "これ"
+                    :english ""
+                    :audio "shirokuma_11-288.mp3"
+                    :screenshot "shirokuma_11-288.jpg"}}
+          {:sort 289
+           :fields {:japanese "クマザサシャンプーだね"
+                    :english ""
+                    :audio "shirokuma_11-289.mp3"
+                    :screenshot "shirokuma_11-289.jpg"}}
+          {:sort 290
+           :fields {:japanese "飲めないかな？"
+                    :english ""
+                    :audio "shirokuma_11-290.mp3"
+                    :screenshot "shirokuma_11-290.jpg"}}
+          {:sort 291
+           :fields {:japanese "飲むんじゃねぇぞ"
+                    :english ""
+                    :audio "shirokuma_11-291.mp3"
+                    :screenshot "shirokuma_11-291.jpg"}}
+          {:sort 292
+           :fields {:japanese "というわけで パンダくん お風呂に入れてみよう"
+                    :english ""
+                    :audio "shirokuma_11-292.mp3"
+                    :screenshot "shirokuma_11-292.jpg"}}
+          {:sort 293
+           :fields {:japanese "いいね"
+                    :english ""
+                    :audio "shirokuma_11-293.mp3"
+                    :screenshot "shirokuma_11-293.jpg"}}
+          {:sort 294
+           :fields {:japanese "よくねぇ やめろ"
+                    :english ""
+                    :audio "shirokuma_11-294.mp3"
+                    :screenshot "shirokuma_11-294.jpg"}}
+          {:sort 295
+           :fields {:japanese "わ～い！ わ～い 飛んだ飛んだ！"
+                    :english ""
+                    :audio "shirokuma_11-295.mp3"
+                    :screenshot "shirokuma_11-295.jpg"}}
+          {:sort 296
+           :fields {:japanese "そうそう うまい うまい"
+                    :english ""
+                    :audio "shirokuma_11-296.mp3"
+                    :screenshot "shirokuma_11-296.jpg"}}
+          {:sort 297
+           :fields {:japanese "あれ どうやるの？"
+                    :english ""
+                    :audio "shirokuma_11-297.mp3"
+                    :screenshot "shirokuma_11-297.jpg"}}
+          {:sort 298
+           :fields {:japanese "こうだよ"
+                    :english ""
+                    :audio "shirokuma_11-298.mp3"
+                    :screenshot "shirokuma_11-298.jpg"}}
+          {:sort 299
+           :fields {:japanese "やめろ！"
+                    :english ""
+                    :audio "shirokuma_11-299.mp3"
+                    :screenshot "shirokuma_11-299.jpg"}}
+          {:sort 300
+           :fields {:japanese "ったく！"
+                    :english ""
+                    :audio "shirokuma_11-300.mp3"
+                    :screenshot "shirokuma_11-300.jpg"}}
+          {:sort 301
+           :fields {:japanese "どこ行くの？"
+                    :english ""
+                    :audio "shirokuma_11-301.mp3"
+                    :screenshot "shirokuma_11-301.jpg"}}
+          {:sort 302
+           :fields {:japanese "俺は サウナが好きなんだ"
+                    :english ""
+                    :audio "shirokuma_11-302.mp3"
+                    :screenshot "shirokuma_11-302.jpg"}}
+          {:sort 303
+           :fields {:japanese "それは 魚！"
+                    :english ""
+                    :audio "shirokuma_11-303.mp3"
+                    :screenshot "shirokuma_11-303.jpg"}}
+          {:sort 304
+           :fields {:japanese "それは アンテナ！"
+                    :english ""
+                    :audio "shirokuma_11-304.mp3"
+                    :screenshot "shirokuma_11-304.jpg"}}
+          {:sort 305
+           :fields {:japanese "それは 手品！"
+                    :english ""
+                    :audio "shirokuma_11-305.mp3"
+                    :screenshot "shirokuma_11-305.jpg"}}
+          {:sort 306
+           :fields {:japanese "サウナって何？"
+                    :english ""
+                    :audio "shirokuma_11-306.mp3"
+                    :screenshot "shirokuma_11-306.jpg"}}
+          {:sort 307
+           :fields {:japanese "ふぅ～ なんかすごい汗出るよ"
+                    :english ""
+                    :audio "shirokuma_11-307.mp3"
+                    :screenshot "shirokuma_11-307.jpg"}}
+          {:sort 308
+           :fields {:japanese "それがサウナのいいところだ"
+                    :english ""
+                    :audio "shirokuma_11-308.mp3"
+                    :screenshot "shirokuma_11-308.jpg"}}
+          {:sort 309
+           :fields {:japanese "蒸されてる感じ"
+                    :english ""
+                    :audio "shirokuma_11-309.mp3"
+                    :screenshot "shirokuma_11-309.jpg"}}
+          {:sort 310
+           :fields {:japanese "これが体にいいんだよ！"
+                    :english ""
+                    :audio "shirokuma_11-310.mp3"
+                    :screenshot "shirokuma_11-310.jpg"}}
+          {:sort 311
+           :fields {:japanese "もう限界…"
+                    :english ""
+                    :audio "shirokuma_11-311.mp3"
+                    :screenshot "shirokuma_11-311.jpg"}}
+          {:sort 312
+           :fields {:japanese "情けねぇな"
+                    :english ""
+                    :audio "shirokuma_11-312.mp3"
+                    :screenshot "shirokuma_11-312.jpg"}}
+          {:sort 313
+           :fields {:japanese "僕も もうダメ…"
+                    :english ""
+                    :audio "shirokuma_11-313.mp3"
+                    :screenshot "shirokuma_11-313.jpg"}}
+          {:sort 314
+           :fields {:japanese "辛抱が足りねぇな"
+                    :english ""
+                    :audio "shirokuma_11-314.mp3"
+                    :screenshot "shirokuma_11-314.jpg"}}
+          {:sort 315
+           :fields {:japanese "今日は やけに 時間が長く感じるぜ"
+                    :english ""
+                    :audio "shirokuma_11-315.mp3"
+                    :screenshot "shirokuma_11-315.jpg"}}
+          {:sort 316
+           :fields {:japanese "俺も もう限界…"
+                    :english ""
+                    :audio "shirokuma_11-316.mp3"
+                    :screenshot "shirokuma_11-316.jpg"}}
+          {:sort 317
+           :fields {:japanese "出よう"
+                    :english ""
+                    :audio "shirokuma_11-317.mp3"
+                    :screenshot "shirokuma_11-317.jpg"}}
+          {:sort 318
+           :fields {:japanese "テメエらの仕業か！"
+                    :english ""
+                    :audio "shirokuma_11-318.mp3"
+                    :screenshot "shirokuma_11-318.jpg"}}
+          {:sort 319
+           :fields {:japanese "おもしろかった！"
+                    :english ""
+                    :audio "shirokuma_11-319.mp3"
+                    :screenshot "shirokuma_11-319.jpg"}}
+          {:sort 320
+           :fields {:japanese "夜遊びって おもしろいね"
+                    :english ""
+                    :audio "shirokuma_11-320.mp3"
+                    :screenshot "shirokuma_11-320.jpg"}}
+          {:sort 321
+           :fields {:japanese "小腹も空いたし ちょっと一杯やってくか"
+                    :english ""
+                    :audio "shirokuma_11-321.mp3"
+                    :screenshot "shirokuma_11-321.jpg"}}
+          {:sort 322
+           :fields {:japanese "いいね"
+                    :english ""
+                    :audio "shirokuma_11-322.mp3"
+                    :screenshot "shirokuma_11-322.jpg"}}
+          {:sort 323
+           :fields {:japanese "えっ？ なになに？"
+                    :english ""
+                    :audio "shirokuma_11-323.mp3"
+                    :screenshot "shirokuma_11-323.jpg"}}
+          {:sort 324
+           :fields {:japanese "へい らっしゃい！"
+                    :english ""
+                    :audio "shirokuma_11-324.mp3"
+                    :screenshot "shirokuma_11-324.jpg"}}
+          {:sort 325
+           :fields {:japanese "おや 今日は新顔さんもご一緒で"
+                    :english ""
+                    :audio "shirokuma_11-325.mp3"
+                    :screenshot "shirokuma_11-325.jpg"}}
+          {:sort 326
+           :fields {:japanese "親父 とりあえず 生２つ"
+                    :english ""
+                    :audio "shirokuma_11-326.mp3"
+                    :screenshot "shirokuma_11-326.jpg"}}
+          {:sort 327
+           :fields {:japanese "あとアイスコーヒーください"
+                    :english ""
+                    :audio "shirokuma_11-327.mp3"
+                    :screenshot "shirokuma_11-327.jpg"}}
+          {:sort 328
+           :fields {:japanese "カフェじゃねぇんだぞ"
+                    :english ""
+                    :audio "shirokuma_11-328.mp3"
+                    :screenshot "shirokuma_11-328.jpg"}}
+          {:sort 329
+           :fields {:japanese "ああ おいしそう！"
+                    :english ""
+                    :audio "shirokuma_11-329.mp3"
+                    :screenshot "shirokuma_11-329.jpg"}}
+          {:sort 330
+           :fields {:japanese "串ごと食うなよ"
+                    :english ""
+                    :audio "shirokuma_11-330.mp3"
+                    :screenshot "shirokuma_11-330.jpg"}}
+          {:sort 331
+           :fields {:japanese "おいしい！"
+                    :english ""
+                    :audio "shirokuma_11-331.mp3"
+                    :screenshot "shirokuma_11-331.jpg"}}
+          {:sort 332
+           :fields {:japanese "まぁ ぐいっと！"
+                    :english ""
+                    :audio "shirokuma_11-332.mp3"
+                    :screenshot "shirokuma_11-332.jpg"}}
+          {:sort 333
+           :fields {:japanese "ああ すみません"
+                    :english ""
+                    :audio "shirokuma_11-333.mp3"
+                    :screenshot "shirokuma_11-333.jpg"}}
+          {:sort 334
+           :fields {:japanese "夜遊びって最高だね！"
+                    :english ""
+                    :audio "shirokuma_11-334.mp3"
+                    :screenshot "shirokuma_11-334.jpg"}}
+          {:sort 335
+           :fields {:japanese "だろ！"
+                    :english ""
+                    :audio "shirokuma_11-335.mp3"
+                    :screenshot "shirokuma_11-335.jpg"}}
+          {:sort 336
+           :fields {:japanese "人生はな 昼もあれば夜もある"
+                    :english ""
+                    :audio "shirokuma_11-336.mp3"
+                    :screenshot "shirokuma_11-336.jpg"}}
+          {:sort 337
+           :fields {:japanese "明るいときもあれば 暗いときもある"
+                    :english ""
+                    :audio "shirokuma_11-337.mp3"
+                    :screenshot "shirokuma_11-337.jpg"}}
+          {:sort 338
+           :fields {:japanese "暗いときにも楽しいことはたくさんあるんだよ"
+                    :english ""
+                    :audio "shirokuma_11-338.mp3"
+                    :screenshot "shirokuma_11-338.jpg"}}
+          {:sort 339
+           :fields {:japanese "どっちもあるから いいんだよね"
+                    :english ""
+                    :audio "shirokuma_11-339.mp3"
+                    :screenshot "shirokuma_11-339.jpg"}}
+          {:sort 340
+           :fields {:japanese "お客さん 深いね"
+                    :english ""
+                    :audio "shirokuma_11-340.mp3"
+                    :screenshot "shirokuma_11-340.jpg"}}
+          {:sort 341
+           :fields {:japanese "そうだよね"
+                    :english ""
+                    :audio "shirokuma_11-341.mp3"
+                    :screenshot "shirokuma_11-341.jpg"}}
+          {:sort 342
+           :fields {:japanese "パンダも白いとこと黒いとこ 両方あるからいいんだもんね"
+                    :english ""
+                    :audio "shirokuma_11-342.mp3"
+                    :screenshot "shirokuma_11-342.jpg"}}
+          {:sort 343
+           :fields {:japanese "おお そうだな！ そのとおりだ！"
+                    :english ""
+                    :audio "shirokuma_11-343.mp3"
+                    :screenshot "shirokuma_11-343.jpg"}}
+          {:sort 344
+           :fields {:japanese "だね"
+                    :english ""
+                    :audio "shirokuma_11-344.mp3"
+                    :screenshot "shirokuma_11-344.jpg"}}
+          {:sort 345
+           :fields {:japanese "グリズリーくん"
+                    :english ""
+                    :audio "shirokuma_11-345.mp3"
+                    :screenshot "shirokuma_11-345.jpg"}}
+          {:sort 346
+           :fields {:japanese "すっかり寝ちゃったね パンダくん"
+                    :english ""
+                    :audio "shirokuma_11-346.mp3"
+                    :screenshot "shirokuma_11-346.jpg"}}
+          {:sort 347
+           :fields {:japanese "なんで俺がコイツをおぶって 帰んなきゃなんねぇんだよ"
+                    :english ""
+                    :audio "shirokuma_11-347.mp3"
+                    :screenshot "shirokuma_11-347.jpg"}}
+          {:sort 348
+           :fields {:japanese "楽しかった…"
+                    :english ""
+                    :audio "shirokuma_11-348.mp3"
+                    :screenshot "shirokuma_11-348.jpg"}}
+          {:sort 349
+           :fields {:japanese "楽しかったって"
+                    :english ""
+                    :audio "shirokuma_11-349.mp3"
+                    :screenshot "shirokuma_11-349.jpg"}}
+          {:sort 350
+           :fields {:japanese "まっ また連れてきてやっても いいかな"
+                    :english ""
+                    :audio "shirokuma_11-350.mp3"
+                    :screenshot "shirokuma_11-350.jpg"}}
+          {:sort 351
+           :fields {:japanese "ペンギンさん ペンギンさん"
+                    :english ""
+                    :audio "shirokuma_11-351.mp3"
+                    :screenshot "shirokuma_11-351.jpg"}}
+          {:sort 352
+           :fields {:japanese "何？ パンダ君"
+                    :english ""
+                    :audio "shirokuma_11-352.mp3"
+                    :screenshot "shirokuma_11-352.jpg"}}
+          {:sort 353
+           :fields {:japanese "自分が格好いいなと思った瞬間の話して"
+                    :english ""
+                    :audio "shirokuma_11-353.mp3"
+                    :screenshot "shirokuma_11-353.jpg"}}
+          {:sort 354
+           :fields {:japanese "そうだなぁ"
+                    :english ""
+                    :audio "shirokuma_11-354.mp3"
+                    :screenshot "shirokuma_11-354.jpg"}}
+          {:sort 355
+           :fields {:japanese "ないならいいよ"
+                    :english ""
+                    :audio "shirokuma_11-355.mp3"
+                    :screenshot "shirokuma_11-355.jpg"}}
+          {:sort 356
+           :fields {:japanese "二秒も考えさせてもらえないんだね"
+                    :english ""
+                    :audio "shirokuma_11-356.mp3"
+                    :screenshot "shirokuma_11-356.jpg"}}
+          {:sort 357
+           :fields {:japanese "ないならいいよ"
+                    :english ""
+                    :audio "shirokuma_11-357.mp3"
+                    :screenshot "shirokuma_11-357.jpg"}}
+          {:sort 358
+           :fields {:japanese "探したかったな"
+                    :english ""
+                    :audio "shirokuma_11-358.mp3"
+                    :screenshot "shirokuma_11-358.jpg"}}
+          {:sort 359
+           :fields {:japanese "ないならいいよ"
+                    :english ""
+                    :audio "shirokuma_11-359.mp3"
+                    :screenshot "shirokuma_11-359.jpg"}}
+          {:sort 360
+           :fields {:japanese "白熊君 頼んだ"
+                    :english ""
+                    :audio "shirokuma_11-360.mp3"
+                    :screenshot "shirokuma_11-360.jpg"}}
+          {:sort 361
+           :fields {:japanese "次回 しろくまカフェ"
+                    :english ""
+                    :audio "shirokuma_11-361.mp3"
+                    :screenshot "shirokuma_11-361.jpg"}}
+          {:sort 362
+           :fields {:japanese "生放送でお送りします"
+                    :english ""
+                    :audio "shirokuma_11-362.mp3"
+                    :screenshot "shirokuma_11-362.jpg"}}
+          {:sort 363
+           :fields {:japanese "いつもどおりやるよ"
+                    :english ""
+                    :audio "shirokuma_11-363.mp3"
+                    :screenshot "shirokuma_11-363.jpg"}}
+          {:sort 364
+           :fields {:japanese "お楽しみに"
+                    :english ""
+                    :audio "shirokuma_11-364.mp3"
+                    :screenshot "shirokuma_11-364.jpg"}}
+  ]
+}
