@@ -62,14 +62,13 @@ class ASSLine < SubtitleLine
   end
 
   def nil?
-    puts (!dialogue? || !real?)
     !dialogue? || !real?
   end
 
   private
 
   def format_text(text)
-    text.squish.gsub('"', '&quot;')
+    text.squish.gsub('"', '&quot;').gsub("\\", "\\\\\\\\")
   end
 
   #def extract_audio(video, index)
@@ -103,7 +102,7 @@ class VTTLine < SubtitleLine
   end
 
   def text
-    @dialogue.join(' ').squish.gsub('"', '&quot;')
+    @dialogue.join(' ').squish.gsub('"', '&quot;').gsub("\\", "\\\\\\\\")
   end
 end
 

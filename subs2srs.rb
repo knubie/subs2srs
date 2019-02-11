@@ -1,5 +1,6 @@
 require 'irb'
 require 'optparse'
+require 'zip'
 require_relative 'string_ext'
 
 $stdout.sync = true
@@ -129,7 +130,7 @@ if subtitle_format == 'vtt' || subtitle_format == 'srt'
       next
     end # Skip the counters in SRT files
     next if line_count < skip_to
-    match = TIMESTAMP_REGEX.match line
+    match = TIMESTAMP_REGEX.match line # Start of a line
     if match
       line_collection.lines << VTTLine.new(match)
     else
@@ -148,35 +149,64 @@ end
 
 #sound = "[sound:#{line.text}.mp3];"
 
+# List of media files to be zipped up later.
+media_files = ['data.edn']
+
 if subtitle_format == 'ass'
   counter = 0
   limit = $options[:limit]
-  output = File.open( "#{video_title}.txt","w"  )
+  output = File.open( "#{video_title}.edn","w"  )
+  cards = ""
 
-  # TODO: Escape \N and "
+
+
   File.open(subtitle_file).map { |l| ASSLine.new(l)}.compact.each do |line|
     #puts line.dialogue? ? "not dialogue" : "is dialogue"
     # TODO: Multithreading
     if line.dialogue? && line.real?
-      # counter == 35 # TODO: make this user input
-      #if counter == 203
       if (limit && counter <= limit) || limit.nil? 
 
         printf "Extracting: %-80s\r", line.text
         #printf("\rExtracting: %d%", line.text)
 
         extract_audio(line.start_adjusted.to_s, line.duration, "#{video_title}-#{counter}", line.midpoint.to_s, video_file)
-        # Line 38 is a problem
-        output << <<-CARD
-          {:sort #{counter}
-           :fields {:japanese "#{line.text.gsub('"', '\"')}"
-                    :english ""
-                    :audio "#{video_title}-#{counter}.mp3"
-                    :screenshot "#{video_title}-#{counter}.jpg"}}
+        line_text = line.text
+
+        # Add file names to list of files to be zipped later.
+        media_files << "#{video_title}-#{counter}.mp3"
+        media_files << "#{video_title}-#{counter}.jpg"
+
+        audio = "@media/#{video_title}-#{counter}.mp3" 
+        screenshot = "#{video_title}-#{counter}.jpg"
+        screenshot_src = "@media/#{video_title}-#{counter}.jpg"
+
+        content = <<~CONTENT
+          ![#{screenshot}](#{screenshot_src})
+          ![](#{audio})
+          ---
+          #{line_text}
+        CONTENT
+
+        cards << <<~CARD
+          {:content "#{content}"
+           :sort #{counter}}
         CARD
       end
       counter = counter + 1
     end
   end
+
+  output << <<~DECK
+    {:name "#{video_title}"
+      :cards [
+        #{cards}
+      ]
+    }
+  DECK
+
   output.close
 end
+
+folder = "./output"
+input_file_names = ['data.edn']
+
