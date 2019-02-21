@@ -46,12 +46,14 @@ end.parse!
 
 require_relative 'lib/subtitle_line'
 
-#puts $options
-#puts ARGV
-
 
 video_title     = video_file.split('.').first
 subtitle_format = subtitle_file.split('.').last
+
+EDN_FILE_NAME = 'data.edn'
+
+# List of media files to be zipped up later.
+media_files = [EDN_FILE_NAME]
 
 
 def extract_audio(start, duration, filename, midpoint, video_file)
@@ -79,15 +81,21 @@ class LineCollection
     @video_title = video_title
     @video_file = video_file
     @lines = []
+
+    @cards_edn = ""
+    @media_files = [EDN_FILE_NAME]
   end
 
   def make_cards!
     counter = $options[:skip_to] || 0
-    output = File.open( "#{@video_title}.txt","w"  )
+    output = File.open(EDN_FILE_NAME, "w")
+
     limit = $options[:limit]
 
     @lines.each do |line|
-      if limit.nil? || (limit && counter <= limit)
+      if limit.nil? || (counter <= limit)
+
+        printf "Extracting: %-80s\r", line.text
 
         extract_audio(
           line.start_adjusted.to_s,
@@ -97,18 +105,53 @@ class LineCollection
           @video_file
         )
 
-        output << <<-CARD
-          {:sort #{counter}
-           :fields {:japanese "#{line.text}"
-                    :english ""
-                    :audio "#{@video_title}-#{counter}.mp3"
-                    :screenshot "#{@video_title}-#{counter}.jpg"}}
-        CARD
+        @cards_edn << card_edn(counter)
+
+        # Add file names to list of files to be zipped later.
+        @media_files << "#{@video_title}-#{counter}.mp3"
+        @media_files << "#{@video_title}-#{counter}.jpg"
       end
       counter = counter + 1
     end
 
+    output << deck_edn
     output.close
+
+    Zip::File.open("#{@video_title}.mochi", Zip::File::CREATE) do |zipfile|
+      @media_files.each do |filename|
+        zipfile.add(filename, File.join(".", filename))
+      end
+    end
+  end
+
+  private
+
+  def deck_edn
+    <<~DECK
+      {:name "#{@video_title}"
+        :cards [
+          #{@cards_edn}
+        ]
+      }
+    DECK
+  end
+
+  def card_edn(counter)
+    audio = "@media/#{@video_title}-#{counter}.mp3" 
+    screenshot = "#{@video_title}-#{counter}.jpg"
+    screenshot_src = "@media/#{@video_title}-#{counter}.jpg"
+
+    content = <<~CONTENT
+      ![#{screenshot}](#{screenshot_src})
+      ![](#{audio})
+      ---
+      #{@lines[counter].text}
+    CONTENT
+
+    <<~CARD
+      {:content "#{content}"
+       :sort #{counter}}
+    CARD
   end
 end
 
@@ -123,13 +166,17 @@ if subtitle_format == 'vtt' || subtitle_format == 'srt'
   skip_to = $options[:skip_to] || 0
 
   File.open(subtitle_file).each do |line|
+
+    next if line_count < skip_to
+
     #line_count = line_count + 1
     next if NEWLINE_REGEX.match line # Skip newlines
+
     if COUNTER_REGEX.match line
       line_count = line.to_i - 1
       next
     end # Skip the counters in SRT files
-    next if line_count < skip_to
+
     match = TIMESTAMP_REGEX.match line # Start of a line
     if match
       line_collection.lines << VTTLine.new(match)
@@ -142,74 +189,16 @@ if subtitle_format == 'vtt' || subtitle_format == 'srt'
 end
 
 
-
-# Japanese; Media; English
-#seperator = "	"
-#seperator = ";"
-
-#sound = "[sound:#{line.text}.mp3];"
-
-# List of media files to be zipped up later.
-media_files = ['data.edn']
-
 if subtitle_format == 'ass'
-  counter = 0
-  limit = $options[:limit]
-  output = File.open( "data.edn","w"  )
-  #output = File.open( "#{video_title}.edn","w"  )
-  cards = ""
-
-
+  line_collection = LineCollection.new(video_title, video_file)
 
   File.open(subtitle_file).map { |l| ASSLine.new(l)}.compact.each do |line|
     #puts line.dialogue? ? "not dialogue" : "is dialogue"
     # TODO: Multithreading
     if line.dialogue? && line.real?
-      if (limit && counter <= limit) || limit.nil? 
-
-        printf "Extracting: %-80s\r", line.text
-        #printf("\rExtracting: %d%", line.text)
-
-        extract_audio(line.start_adjusted.to_s, line.duration, "#{video_title}-#{counter}", line.midpoint.to_s, video_file)
-        line_text = line.text
-
-        # Add file names to list of files to be zipped later.
-        media_files << "#{video_title}-#{counter}.mp3"
-        media_files << "#{video_title}-#{counter}.jpg"
-
-        audio = "@media/#{video_title}-#{counter}.mp3" 
-        screenshot = "#{video_title}-#{counter}.jpg"
-        screenshot_src = "@media/#{video_title}-#{counter}.jpg"
-
-        content = <<~CONTENT
-          ![#{screenshot}](#{screenshot_src})
-          ![](#{audio})
-          ---
-          #{line_text}
-        CONTENT
-
-        cards << <<~CARD
-          {:content "#{content}"
-           :sort #{counter}}
-        CARD
-      end
-      counter = counter + 1
+      line_collection.lines << line
     end
   end
 
-  output << <<~DECK
-    {:name "#{video_title}"
-      :cards [
-        #{cards}
-      ]
-    }
-  DECK
-
-  output.close
-end
-
-Zip::File.open("#{video_title}.mochi", Zip::File::CREATE) do |zipfile|
-  media_files.each do |filename|
-    zipfile.add(filename, File.join(".", filename))
-  end
+  line_collection.make_cards!
 end
