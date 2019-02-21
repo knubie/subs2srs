@@ -155,7 +155,8 @@ media_files = ['data.edn']
 if subtitle_format == 'ass'
   counter = 0
   limit = $options[:limit]
-  output = File.open( "#{video_title}.edn","w"  )
+  output = File.open( "data.edn","w"  )
+  #output = File.open( "#{video_title}.edn","w"  )
   cards = ""
 
 
@@ -207,6 +208,8 @@ if subtitle_format == 'ass'
   output.close
 end
 
-folder = "./output"
-input_file_names = ['data.edn']
-
+Zip::File.open("#{video_title}.mochi", Zip::File::CREATE) do |zipfile|
+  media_files.each do |filename|
+    zipfile.add(filename, File.join(".", filename))
+  end
+end
