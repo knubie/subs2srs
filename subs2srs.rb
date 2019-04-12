@@ -45,6 +45,7 @@ OptionParser.new do |opts|
 end.parse!
 
 require_relative 'lib/subtitle_line'
+require_relative 'lib/av'
 
 
 video_title     = video_file.split('.').first
@@ -54,25 +55,6 @@ EDN_FILE_NAME = 'data.edn'
 
 # List of media files to be zipped up later.
 media_files = [EDN_FILE_NAME]
-
-
-def extract_audio(start, duration, filename, midpoint, video_file)
-  # https://trac.ffmpeg.org/wiki/Seeking#Cuttingsmallsections
-  if $options[:audio]
-    #puts   "Extracting audio for line"
-    #puts   "ffmpeg -ss #{start}  -i #{video_file} -t 00:00:#{duration} -q:a 0 -map a #{filename}.mp3"
-    system "ffmpeg -ss #{start}  -i #{video_file} -t 00:00:#{duration} -q:a 0 -map a #{filename}.mp3 >/dev/null 2>&1"
-  end
-
-  if $options[:images]
-    #puts   "Extracting image for line"
-    #puts   "ffmpeg -ss #{midpoint} -i #{video_file} -vframes:v 1 -q:v 2 #{filename}.jpg"
-    #system "ffmpeg -ss #{midpoint} -i #{video_file} -filter:v -frames:v 1 -q:v 2 #{filename}.jpg >/dev/null 2>&1"
-    system "ffmpeg -ss #{midpoint} -i #{video_file} -frames:v 1 -q:v 2 #{filename}.jpg >/dev/null 2>&1"
-    # TODO: Crop option.
-    #system "ffmpeg -ss #{midpoint} -i #{video_file} -filter:v \"crop=in_w:in_h-170:0:0\" -vframes 1 -q:v 2 #{filename}.jpg >/dev/null 2>&1"
-  end
-end
 
 class LineCollection
   attr_accessor :lines
@@ -97,19 +79,24 @@ class LineCollection
 
         printf "Extracting: %-80s\r", line.text
 
-        extract_audio(
-          line.start_adjusted.to_s,
-          line.duration,
-          "#{@video_title}-#{counter}",
-          line.midpoint.to_s,
-          @video_file
+        AV.extract_media(
+          start:      line.start_adjusted.to_s,
+          duration:   line.duration,
+          filename:   "#{@video_title}-#{counter}",
+          midpoint:   line.midpoint.to_s,
+          video_file: @video_file
         )
 
         @cards_edn << card_edn(counter)
 
         # Add file names to list of files to be zipped later.
-        @media_files << "#{@video_title}-#{counter}.mp3"
-        @media_files << "#{@video_title}-#{counter}.jpg"
+        if $options[:audio]
+          @media_files << "#{@video_title}-#{counter}.mp3"
+        end
+
+        if $options[:images]
+          @media_files << "#{@video_title}-#{counter}.jpg"
+        end
       end
       counter = counter + 1
     end
@@ -199,6 +186,7 @@ if subtitle_format == 'ass'
       line_collection.lines << line
     end
   end
+
 
   line_collection.make_cards!
 end
