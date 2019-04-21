@@ -42,6 +42,10 @@ OptionParser.new do |opts|
   opts.on("--skip-to N", Integer, "Skip to the Nths line of dialogue before capturing") do |n|
     $options[:skip_to] =n
   end
+
+  opts.on("--video", "Embed video instead of audo + screenshots") do |b|
+    $options[:video] = b
+  end
 end.parse!
 
 require_relative 'lib/subtitle_line'
@@ -77,26 +81,11 @@ class LineCollection
     @lines.each do |line|
       if limit.nil? || (counter <= limit)
 
-        printf "Extracting: %-80s\r", line.text
+        extract_media!(line, counter)
 
-        AV.extract_media(
-          start:      line.start_adjusted.to_s,
-          duration:   line.duration,
-          filename:   "#{@video_title}-#{counter}",
-          midpoint:   line.midpoint.to_s,
-          video_file: @video_file
-        )
+        @cards_edn << card_edn(line, counter)
 
-        @cards_edn << card_edn(counter)
-
-        # Add file names to list of files to be zipped later.
-        if $options[:audio]
-          @media_files << "#{@video_title}-#{counter}.mp3"
-        end
-
-        if $options[:images]
-          @media_files << "#{@video_title}-#{counter}.jpg"
-        end
+        add_media_files! counter
       end
       counter = counter + 1
     end
@@ -113,6 +102,29 @@ class LineCollection
 
   private
 
+  def extract_media!(line, counter)
+    printf "Extracting: %-80s\r", line.text
+
+    AV.extract_media(
+      start:      line.start_adjusted.to_s,
+      duration:   line.duration,
+      filename:   "#{@video_title}-#{counter}",
+      midpoint:   line.midpoint.to_s,
+      video_file: @video_file
+    )
+  end
+
+  def add_media_files!(counter)
+    # Add file names to list of files to be zipped later.
+    if $options[:audio]
+      @media_files << "#{@video_title}-#{counter}.mp3"
+    end
+
+    if $options[:images]
+      @media_files << "#{@video_title}-#{counter}.jpg"
+    end
+  end
+
   def deck_edn
     <<~DECK
       {:name "#{@video_title}"
@@ -123,7 +135,7 @@ class LineCollection
     DECK
   end
 
-  def card_edn(counter)
+  def card_edn(line, counter)
     audio = "@media/#{@video_title}-#{counter}.mp3" 
     screenshot = "#{@video_title}-#{counter}.jpg"
     screenshot_src = "@media/#{@video_title}-#{counter}.jpg"
@@ -132,7 +144,33 @@ class LineCollection
       ![#{screenshot}](#{screenshot_src})
       ![](#{audio})
       ---
-      #{@lines[counter].text}
+      #{line.text}
+    CONTENT
+
+    <<~CARD
+      {:content "#{content}"
+       :sort #{counter}}
+    CARD
+  end
+end
+
+class VideoLineCollection < LineCollection
+  def initialize(*args)
+    super *args
+    @media_files << @video_file
+  end
+
+  def extract_media! *args; end
+
+  def add_media_files! *args; end
+
+  private
+
+  def card_edn(line, counter)
+    content = <<~CONTENT
+      ![#{@video_title}](@media/#{@video_file}#t=#{line.start_adjusted.to_s},#{line.end_adjusted.to_s})
+      ---
+      #{line.text}
     CONTENT
 
     <<~CARD
@@ -148,7 +186,12 @@ if subtitle_format == 'vtt' || subtitle_format == 'srt'
   NEWLINE_REGEX = /^\n$/ 
   COUNTER_REGEX = /^\d+$/ 
 
-  line_collection = LineCollection.new(video_title, video_file)
+  if $options[:video]
+    line_collection = VideoLineCollection.new(video_title, video_file)
+  else
+    line_collection = LineCollection.new(video_title, video_file)
+  end
+
   line_count = 0
   skip_to = $options[:skip_to] || 0
 
@@ -156,19 +199,23 @@ if subtitle_format == 'vtt' || subtitle_format == 'srt'
 
     next if line_count < skip_to
 
-    #line_count = line_count + 1
-    next if NEWLINE_REGEX.match line # Skip newlines
+    line = line.strip
 
-    if COUNTER_REGEX.match line
+    #line_count = line_count + 1
+    next if line == "" # Skip newlines
+
+    next if /.*SKIP/.match line
+
+    if COUNTER_REGEX.match line.strip
       line_count = line.to_i - 1
       next
     end # Skip the counters in SRT files
 
-    match = TIMESTAMP_REGEX.match line # Start of a line
+    match = TIMESTAMP_REGEX.match line.strip # Start of a line
     if match
       line_collection.lines << VTTLine.new(match)
     else
-      line_collection.lines.last.dialogue << line
+      line_collection.lines.last.dialogue << line.strip
     end
   end
 
@@ -177,7 +224,11 @@ end
 
 
 if subtitle_format == 'ass'
-  line_collection = LineCollection.new(video_title, video_file)
+  if $options[:video]
+    line_collection = VideoLineCollection.new(video_title, video_file)
+  else
+    line_collection = LineCollection.new(video_title, video_file)
+  end
 
   File.open(subtitle_file).map { |l| ASSLine.new(l)}.compact.each do |line|
     #puts line.dialogue? ? "not dialogue" : "is dialogue"

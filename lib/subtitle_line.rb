@@ -1,5 +1,5 @@
 class SubtitleLine
-  attr_reader :start, :start_adjusted, :text
+  attr_reader :start, :start_adjusted, :end_adjusted, :text
 
   BUFFER = $options[:buffer] || 0.1
 
@@ -47,6 +47,7 @@ class ASSLine < SubtitleLine
     @start          = TimeStamp.new match[FORMAT[:start]]
     @end            = TimeStamp.new match[FORMAT[:end]]
     @start_adjusted = TimeStamp.new(@start + DELAY)
+    @end_adjusted   = TimeStamp.new(@end + DELAY)
     @text           = format_text(match[FORMAT[:text]])
   end
 
@@ -98,6 +99,7 @@ class VTTLine < SubtitleLine
     @start          = TimeStamp.new time[1]
     @end            = TimeStamp.new time[2]
     @start_adjusted = TimeStamp.new(@start + DELAY)
+    @end_adjusted   = TimeStamp.new(@end + DELAY)
     @dialogue = []
   end
 
