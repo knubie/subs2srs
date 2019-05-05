@@ -5,19 +5,10 @@ require_relative 'string_ext'
 
 $stdout.sync = true
 
-#TODO: Add options to only regenerate text, images or audio
-video_file = ARGV[0]
-raise "Video file required." unless video_file
-
-subtitle_file = ARGV[1]
-raise "Subtitle file required." unless subtitle_file
-
-#raise "Too many arguments." if ARGV.size > 2
-
 $options = {images: true, audio: true}
 
 OptionParser.new do |opts|
-  opts.banner = "Usage: example.rb [options]"
+  opts.banner = "Usage: example.rb video_file subtitle_file [options]"
 
   opts.on("--buffer N", Float, "The buffer (in milliseconds) around each audio clip") do |n|
     $options[:buffer] = n
@@ -46,7 +37,21 @@ OptionParser.new do |opts|
   opts.on("--video", "Embed video instead of audo + screenshots") do |b|
     $options[:video] = b
   end
+
+  opts.on("-h", "--help", "Prints this help") do
+    puts opts
+    exit
+  end
 end.parse!
+
+#TODO: Add options to only regenerate text, images or audio
+video_file = ARGV[0]
+raise "Video file required." unless video_file
+
+subtitle_file = ARGV[1]
+raise "Subtitle file required." unless subtitle_file
+
+#raise "Too many arguments." if ARGV.size > 2
 
 require_relative 'lib/subtitle_line'
 require_relative 'lib/av'
